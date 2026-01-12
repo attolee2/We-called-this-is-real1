@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    {"id": "Gate", "name": "성문", "unlock": true},
+    {"id": "Plaza", "name": "광장", "unlock": true},
+    {"id": "Smithy", "name": "대장간", "unlock": true},
+    {"id": "Gallery", "name": "갤러리", "unlock": false, "req": "rep.court>=30"},
+    {"id": "Inn", "name": "여관", "unlock": true},
+    {"id": "River_Bank", "name": "강가", "unlock": true},
+    {"id": "Marsh_Edge", "name": "습지 가장자리", "unlock": false, "req": "quest:EVT_NIA_SCENT"},
+    {"id": "Castle_Garden", "name": "성 정원", "unlock": false, "req": "BALL_ENTRY"}
+  ],
+  "routes": [
+    ["Gate", "Plaza"], ["Plaza", "Smithy"], ["Plaza", "Gallery"], ["Plaza", "Inn"],
+    ["Plaza", "River_Bank"], ["River_Bank", "Marsh_Edge"], ["Plaza", "Castle_Garden"]
+  ],
+  "fastTravelUnlock": {"byItem": {"MAP_ShortcutPass": ["Gate", "Gallery", "Castle_Garden"]}}
+}

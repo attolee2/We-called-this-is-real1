@@ -1,0 +1,6 @@
+# Observer packets for Baretos teaser content
+Observer:
+  - id: OBS_BAR_CATACOMB_INTRO
+    scene: 99_Observer_Baretos
+    camera: path_catacomb_01
+    narration: obs.bar.01

@@ -1,0 +1,26 @@
+PartnerSynergy:
+  partners: [seira, isolde, claude, lutea, maira, hark, nia, elden, tomo, arin]
+  base:
+    seira: 1.05
+    isolde: 1.04
+    claude: 1.03
+    lutea: 1.05
+    maira: 1.02
+    hark: 1.03
+    nia: 1.03
+    elden: 1.02
+    tomo: 1.02
+    arin: 1.02
+  pattern_tags:
+    spin: {seira: +0.02, isolde: +0.02, claude: +0.01}
+    hold: {lutea: +0.02, nia: +0.02, hark: +0.01}
+    pause: {maira: +0.02, elden: +0.01}
+  condition_bonus:
+    dress_match: {isolde: +0.02}
+    audience_cheer: {claude: +0.02}
+    candle_light: {lutea: +0.01}
+    royal_presence: {seira: +0.01, hark: +0.01}
+  finish_grade_bonus:
+    A: 120
+    B: 60
+    C: 20

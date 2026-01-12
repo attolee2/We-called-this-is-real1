@@ -1,0 +1,34 @@
+# Crafting recipes for Solmara emotion items
+Alchemy:
+  - id: POT_Affection
+    name: 애정의 향수
+    inputs: [SOL_FL_RoyalRose x1, HONEY x1]
+    effect: {status: Affectionate, duration_sec: 300}
+    side: {cooldown_sec: 600, note: "연속 사용 시 효과 반감"}
+
+  - id: POT_Friendly
+    name: 우호의 연무
+    inputs: [SOL_FL_KingsThyme x1, SOL_FL_MarshMint x1]
+    effect: {status: Friendly, duration_sec: 240}
+
+  - id: POT_Sad
+    name: 상념의 향
+    inputs: [SOL_FL_LanternMoss x1]
+    effect: {status: Sad, duration_sec: 180}
+    note: "정령 대화 트리거 확률↑"
+
+  - id: POT_Calm
+    name: 평온의 연무
+    inputs: [SOL_FL_MarshMint x1, IN_FireflyEssence x1]
+    effect: {status: Calm, duration_sec: 240}
+
+Cooking:
+  - id: DIS_HerbToast
+    name: 허브 토스트
+    inputs: [SOL_FL_SilverWheat x1, BUTTER x1, SOL_FL_KingsThyme x1]
+    effect: {Focus: "+1", duration_sec: 300}
+
+  - id: DIS_MossSoup
+    name: 이끼 수프
+    inputs: [SOL_FL_LanternMoss x1, ONION x1]
+    effect: {SpiritSight: "+1", duration_sec: 180}

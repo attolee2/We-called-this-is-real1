@@ -1,0 +1,224 @@
+# Baretos teaser relics (expansion preview)
+Artifact:
+  - id: BAR_ART_BoneCharm
+    name: "뼈 부적"
+    tier: Uncommon
+    type: Talisman
+    equip_slot: Charm
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_SPIRITSIGHT
+        value: 1
+        notes: "망자의 날 기간 한정"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "BAR_FE_DayOfDeparted"
+      rules: "기억 봉헌"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "작은 촛불이 길을 잇는다."
+
+  - id: BAR_ART_RuneInk
+    name: "룬 잉크"
+    tier: Rare
+    type: Artifact
+    equip_slot: Tool
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_JOURNAL_CLARITY
+        value: 15
+        notes: "일기→의식 키워드 연결"
+    active:
+      has_active: true
+      cooldown_sec: 600
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect:
+        - id: ACT_EMO_PURIFY
+          value: 1
+          notes: "Hex 제거 & 관찰자 확률 +10%"
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival, Craft]
+      where: "BAR_FE_ShadowMarket"
+      rules: "룬 거래 허가"
+    upgrade:
+      method: Festival
+      mats:
+        - BAR_FL_NightOrchid x1
+        - DO_ForbiddenTome x1
+      caps:
+        passive: "+15%"
+        active: "-20% CD"
+    flavor: "잉크는 봉인의 문장을 해독한다."
+
+  - id: BAR_ART_MoonSalt
+    name: "월염 소금"
+    tier: Rare
+    type: Relic
+    equip_slot: Trinket
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_GATE_OVERRIDE
+        value: 1
+        notes: "밤 시간 의식 게이트 -1"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Dungeon]
+      where: "SacredRuins_Temple"
+      rules: "봉인 의식 해금"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "바닷빛 염이 달을 품었다."
+
+  - id: BAR_ART_WispAntler
+    name: "위습 사슴뿔"
+    tier: Rare
+    type: Artifact
+    equip_slot: Emblem
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 10
+        notes: "슬픔→평온 전이 보정"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 1
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Drop]
+      where: "SacredRuins_WispDeer"
+      rules: "SpiritSight 활성"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "희미한 빛이 마음을 다독인다."
+
+  - id: BAR_ART_OrchidTeaSet
+    name: "야화난 다기"
+    tier: Epic
+    type: Artifact
+    equip_slot: Tool
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 15
+        notes: "대화 용서·화해 선택지 보정"
+    active:
+      has_active: true
+      cooldown_sec: 1200
+      charges_per_life: 1
+      cast_time_sec: 1.0
+      duration_sec: 30
+      effect:
+        - id: ACT_RELATION_BURST
+          value: 1
+          notes: "캠프파이어 대화 중 1랭크 상승"
+    emotion_tuning:
+      Affectionate: 2
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "BAR_FE_DayOfDeparted"
+      rules: "위령 차 의식 완주"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "향이 마음을 다시 묶어 준다."
+
+  - id: BAR_ART_TomeOfReversal
+    name: "역전의 서"
+    tier: Epic
+    type: Document
+    equip_slot: Book
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 15
+        notes: "실타래 불협 패널티 완화"
+    active:
+      has_active: true
+      cooldown_sec: 900
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect:
+        - id: ACT_UNDO_CHOICE
+          value: 1
+          notes: "실타래 내 타일 1회 재선택"
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "BAR_FE_ShadowMarket"
+      rules: "금기 거래 허용"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "금기는 파괴가 아닌 치유의 문장."

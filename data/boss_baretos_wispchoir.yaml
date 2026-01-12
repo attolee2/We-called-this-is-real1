@@ -1,0 +1,71 @@
+Boss:
+  id: BAR_BOSS_WISPCHOIR
+  title: 묶인 합창 — 위습 콰이어
+  arena: MirrorChamber
+  music: BGM/baretos/nocturne_choir.stem
+  intro:
+    cut: [fade_in, mirror_bloom, whisper_layer]
+    loc: "밤은 늘어졌고, 목소리는 거꾸로 울렸다."
+
+  phases:
+    - phase: 1
+      name: Call & Response
+      hp: 100
+      pattern:
+        rhythm: [L, R, L, R, Pause, L+R]
+        sigil_overlay: none
+      mech:
+        call_window_ms: 900
+        response_window_ms: 500
+        fail: {debuff: SAD_ECHO(10s)}
+      assists:
+        items: [{id: BAR_ART_MoonSalt, eff: "-20% call speed"}]
+      fx: {light: choir_glow, ui: verse_lines}
+
+    - phase: 2
+      name: Sigil Cross
+      hp: 120
+      pattern:
+        rhythm: [L, HoldL(2), R, HoldR(2), L+R]
+        sigil_overlay: RuneX
+      mech:
+        rule: "서클 유지 + 리듬 대응 동시"
+        circle_hold: 18
+        overlap_penalty: {hp_tick: 1/s}
+        fail: {hex: MIRROR_SPLIT(8s)}
+      assists:
+        items: [{id: BAR_ART_RuneInk, eff: "1회 페이즈 스킵"}]
+      fx: {light: rune_shine, ui: mirror_grid}
+
+    - phase: 3
+      name: Echo Fugue
+      hp: 150
+      pattern:
+        rhythm: [R, L, R, L+R, Spin, Pause, Spin]
+        sigil_overlay: CircleRunes
+      mech:
+        clones: 2
+        clone_rule: "거울 복제는 반전 입력 요구"
+        enrage_at: "30% (bpm+12)"
+        fail: {wipe: NIGHT_SWALLOW}
+      assists:
+        ritual: {require: "SPIRITSIGHT | FEST_DayOfDeparted"}
+      fx: {light: choir_storm, ui: echo_trails}
+
+  checks:
+    fairness:
+      telegraph_ms_min: 450
+      no_two_spins_in_row: true
+      recover_windows: "2 per phase"
+
+  rewards:
+    fixed: [RECIPE_RuneInk, BAR_ART_BoneCharm]
+    rare:
+      - {id: BAR_ART_MoonSalt, pct: 22}
+      - {id: ACC_BoneChime, pct: 12}
+
+  observer_packets:
+    - id: OBS_BAR_WISPCHOIR_INTRO
+      text: "노래는 저주가 아니었다. 남은 자들의 기도였다."
+    - id: OBS_BAR_WISPCHOIR_CLEAR
+      text: "침묵이 돌아오자, 밤도 길이를 되찾았다."

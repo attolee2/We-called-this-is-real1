@@ -1,0 +1,42 @@
+# Letters and rumors for Solmara
+Letters:
+  - id: LETTER_SEIRA_INVITE
+    from: SEIRA
+    trigger: {rank: Friendly, dayOffset: -1, festival: SOL_FE_Tournament}
+    textKey: dlg.seira.letter.invite
+
+  - id: LETTER_MAIRA_FIREPLACE
+    from: MAIRA
+    trigger: {time: Night, seen: Inn_Fireplace}
+    textKey: dlg.maira.letter.fireplace
+
+  - id: LETTER_BERTA_NOTE
+    from: BERTA
+    trigger: {journal: 의심}
+    textKey: dlg.berta.letter.note
+
+Rumors:
+  - id: RUMOR_GATE_TIGHT
+    place: Market
+    text: "오늘 밤 성문 검문이 강화된다던데."
+    hint: {map: Gate, type: Time}
+
+  - id: RUMOR_FIRELIT_POND
+    place: Inn
+    text: "해질녘 연못에서 반딧불이 물결처럼 춤춘대."
+    hint: {map: Pond, type: Dusk}
+
+  - id: RUMOR_BALL_PREP
+    place: CastleOuter
+    text: "무도회 준비가 한창이래. 드레스 대여는 벌써 매진!"
+    hint: {quest: Q_SOL_BALL_HIDDEN}
+
+  - id: RUMOR_MINE_ECHO
+    place: Plaza
+    text: "폐광 안쪽에서 오래된 노랫소리가 들린대."
+    hint: {map: Mine, type: Night}
+
+  - id: RUMOR_ALCH_SCENT
+    place: Market
+    text: "연금술 연구소 쪽에서 달큰한 향이 난다더라."
+    hint: {npc: SOL_NPC_BERTA}

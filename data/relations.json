@@ -1,0 +1,22 @@
+{
+  "baseGain": {
+    "small": [1, 3],
+    "big": [5, 15]
+  },
+  "verbs": {
+    "Greet": 1,
+    "Listen": 3,
+    "Gift": 2,
+    "PerformMusic": 2,
+    "ApologizeTrue": 6,
+    "ApologizeFalse": -3,
+    "Promise": 3,
+    "PromiseBreak": -15
+  },
+  "emotionBias": {
+    "Affectionate": {"confess_success_pct": 10},
+    "Friendly": {"trade_bonus_pct": 5},
+    "Sad": {"comfort_route": 1},
+    "Hostile": {"options_reduced": 1}
+  }
+}

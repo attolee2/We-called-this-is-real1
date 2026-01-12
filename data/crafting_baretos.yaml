@@ -1,0 +1,44 @@
+Stations:
+  - id: BAR_STN_Altar
+    type: ritual
+    slots: 3
+  - id: BAR_STN_Mortar
+    type: grind
+    slots: 1
+  - id: BAR_STN_Lamp
+    type: distill
+    slots: 1
+
+GatherNodes:
+  - id: BAR_NODE_Saltbed
+    time: Night
+    weather: Clear
+    drop: [{item: BAR_MAT_MoonsaltOre, pct: 65}]
+  - id: BAR_NODE_NocturneLilac
+    time: Dusk
+    drop: [{item: BAR_MAT_LilacResin, pct: 50}]
+  - id: BAR_NODE_Bonepit
+    time: Any
+    drop: [{item: BAR_MAT_ChimeBone, pct: 40}]
+
+Recipes:
+  - id: BAR_ART_MoonSalt
+    station: BAR_STN_Mortar
+    inputs: [BAR_MAT_MoonsaltOre x2, SOL_FL_LanternMoss x1]
+    time_s: 20
+    eff: {assist: "-20% call speed"}
+  - id: BAR_ART_RuneInk
+    station: BAR_STN_Lamp
+    inputs: [BAR_MAT_LilacResin x1, IN_FireflyEssence x1]
+    time_s: 25
+    eff: {assist: "1회 페이즈 스킵"}
+  - id: ACC_BoneChime
+    station: BAR_STN_Altar
+    inputs: [BAR_MAT_ChimeBone x2, BAR_ART_MoonSalt x1]
+    time_s: 30
+    eff: {trinket: "Echo 저항 +15%"}
+
+Shops:
+  - id: Bar_ShadyMarket
+    stock: [BAR_MAT_LilacResin, BAR_MAT_MoonsaltOre]
+    priceTier: Rare

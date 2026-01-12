@@ -1,0 +1,29 @@
+# Minigame specifications
+Minigame:
+  - id: cheer_timing
+    bpm: 120
+    lanes: 1
+    window_ms: {perfect: 50, good: 90}
+    score: {perfect: "+2", good: "+1", miss: "-1"}
+    emotion_sync: {Affectionate: "+0.1", Friendly: "+0.05"}
+    rewards: {gradeA: CLO_CapeCrimson, gradeB: MED_TokenValor}
+
+  - id: dance_rhythm
+    bpm: 95
+    lanes: 2
+    pattern: [L, R, L, L, R]
+    window_ms: {perfect: 60, good: 100}
+    partner_affinity_bonus: "+10pct"
+    fail_penalty: {rel: {partner: "-5"}}
+
+  - id: etiquette_quiz
+    questions: 5
+    pass: 4
+    source: RoyalEtiquetteBook
+    result: {pass: invite_success, fail: sentinel_check}
+
+  - id: stealth_entry
+    vision_cones: 6
+    noise_meter: true
+    tools: [MASK_Simple, FOOT_SOFTEN_POWDER]
+    fail: {rel: {npc: SOL_NPC_SENTINEL, v: "-10"}}

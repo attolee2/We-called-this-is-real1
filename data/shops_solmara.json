@@ -1,0 +1,9 @@
+{
+  "priceTier": {"Common": [10, 40], "Uncommon": [50, 120], "Rare": [200, 400], "Epic": [800, 1200]},
+  "modifiers": {"Festival": 0.9, "Night": 1.1, "NobilityDiscount": 0.95},
+  "shops": {
+    "Inn_Shop": ["SOL_BR_RoyalRoseTea", "SOL_BR_AppleWine", "DIS_HerbToast"],
+    "Smithy": ["ING_IronIngot", "UPG_BladeEdgeI"],
+    "HerbCart": ["SOL_FL_KingsThyme", "SOL_FL_MarshMint", "IN_FireflyEssence"]
+  }
+}

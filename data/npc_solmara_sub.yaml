@@ -1,0 +1,143 @@
+NPC:
+  - npcId: SOL_NPC_RUDGAR
+    name: 루드가르
+    role: 대장장이
+    schedule: {Day: Smithy, Dusk: Market_ForgeStall, Night: Tavern_Table}
+    likes: [ING_IronIngot, DIS_IroncapStew]
+    dislikes: [HAGGLE_Excess]
+    verbs_bonus: {TradeFair: +1, Teach: +1}
+    events:
+      - id: EVT_RUDGAR_EDGE
+        req: {rank: Friendly, item: ING_IronIngot}
+        eff: {rel: +3, craftUnlock: "UPG_BladeEdgeI"}
+    observer_followup: ["망치질은 노래처럼 박자를 가졌다."]
+
+  - npcId: SOL_NPC_ISOLDE
+    name: 이졸데
+    role: 귀족 아가씨
+    schedule: {Day: Castle_Garden, Dusk: Gallery, Night: Manor_Balcony}
+    likes: [ACC_RoseCameo, SOL_BR_AppleWine]
+    dislikes: [LOUD_Market]
+    verbs_bonus: {SmallTalk: +1, Dance: +1}
+    events:
+      - id: EVT_ISOLDE_CANVAS
+        req: {rank: Friendly, place: Gallery}
+        eff: {rel: +4, hint: HINT_TRUEENDING_03}
+    observer_followup: ["그녀는 말하지 않고도 많은 것을 들었다."]
+
+  - npcId: SOL_NPC_TOMO
+    name: 토모
+    role: 견습 시종
+    schedule: {Day: Castle_Corridor, Dusk: Gate, Night: Servants_Quarter}
+    likes: [ACC_SimpleMask, DIS_HerbToast]
+    dislikes: [Scold]
+    verbs_bonus: {Encourage: +2, Gift: +1}
+    events:
+      - id: EVT_TOMO_SHORTCUT
+        req: {rank: Friendly, time: Dusk}
+        eff: {rel: +3, item: MAP_ShortcutPass}
+    observer_followup: ["작은 발걸음이 성 전체의 길을 알았다."]
+
+  - npcId: SOL_NPC_ARIN
+    name: 아린
+    role: 강가 어부
+    schedule: {Dawn: River_Bank, Day: River_Bank, Night: River_Hut}
+    likes: [FISH_StonefinTrout, DIS_GrilledTrout]
+    dislikes: [Waste]
+    verbs_bonus: {Listen: +1, ShareMeal: +1}
+    events:
+      - id: EVT_ARIN_TIDE
+        req: {weather: Clear, time: Dawn}
+        eff: {rel: +3, item: BAIT_FireflyLarva}
+    observer_followup: ["물결이 대답을 알고 있었다."]
+
+  - npcId: SOL_NPC_ELDEN
+    name: 엘든
+    role: 성문 서기관
+    schedule: {Day: Gate_Desk, Night: Gate_Desk}
+    likes: [DOC_FieldNotes, TOOL_ScribeQuill]
+    dislikes: [Lies]
+    verbs_bonus: {Letter: +2, Promise: +1}
+    events:
+      - id: EVT_ELDEN_RECOMMEND
+        req: {rank: Friendly, item: DOC_FieldNotes}
+        eff: {rel: +3, item: REC_LetterOfIntro}
+    observer_followup: ["그는 사실 모험담을 사랑했다."]
+
+  - npcId: SOL_NPC_NIA
+    name: 니아
+    role: 약초상
+    schedule: {Day: Market_HerbCart, Dusk: Marsh_Edge, Night: Home}
+    likes: [SOL_FL_KingsThyme, SOL_FL_MarshMint]
+    dislikes: [Trample]
+    verbs_bonus: {Teach: +2, TradeFair: +1}
+    events:
+      - id: EVT_NIA_SCENT
+        req: {rank: Friendly, item: SOL_FL_MarshMint}
+        eff: {rel: +4, recipe: POT_Calm}
+    observer_followup: ["향기는 기억을 불렀다."]
+
+  - npcId: SOL_NPC_PIP
+    name: 핍
+    role: 전령
+    schedule: {Day: Plaza, Dusk: Gate, Night: Inn_Counter}
+    likes: [SHOES_Light, DIS_FestivalSkewer]
+    dislikes: [Delay]
+    verbs_bonus: {Promise: +2, Gift: +1}
+    events:
+      - id: EVT_PIP_ROUTEMAP
+        req: {rank: Friendly}
+        eff: {rel: +3, map: FastTravel_InnerRoads}
+    observer_followup: ["편지는 길보다 먼저 도착했다."]
+
+  - npcId: SOL_NPC_LUTEA
+    name: 루테아
+    role: 방랑 음유시인
+    schedule: {Day: Plaza, Night: Inn_Fireplace}
+    likes: [INSTR_Lute, DIS_HoneyPudding]
+    dislikes: [Offbeat]
+    verbs_bonus: {PerformMusic: +2, Letter: +1}
+    events:
+      - id: EVT_LUTEA_DUET
+        req: {verb: PerformMusic, score: A}
+        eff: {rel: +4, sfx: DUET_Stem}
+    observer_followup: ["두 멜로디가 한 이야기가 되었다."]
+
+  - npcId: SOL_NPC_MINA
+    name: 미나
+    role: 아이(쌍둥이 누나)
+    schedule: {Day: Plaza_Fountain, Dusk: Farm_Road}
+    likes: [ACC_RibbonMint, DIS_FestivalSkewer]
+    dislikes: [Scold]
+    verbs_bonus: {Joke: +2, Gift: +1}
+    events:
+      - id: EVT_MINA_HOPSCOTCH
+        req: {day: Any}
+        eff: {rel: +2, hint: PLAY_Square}
+    observer_followup: ["웃음은 돌 틈 사이에 오래 남았다."]
+
+  - npcId: SOL_NPC_MINO
+    name: 미노
+    role: 아이(쌍둥이 동생)
+    schedule: {Day: Plaza_Fountain, Dusk: Farm_Road}
+    likes: [TOY_WoodTop]
+    dislikes: [Rain]
+    verbs_bonus: {Joke: +2}
+    events:
+      - id: EVT_MINO_TOP
+        req: {item: TOY_WoodTop}
+        eff: {rel: +3}
+    observer_followup: ["팽이는 빙글 돌아도 길을 잃지 않았다."]
+
+  - npcId: SOL_NPC_HARK
+    name: 하크
+    role: 퇴역 기사
+    schedule: {Day: Castle_Shade, Night: Inn_Porch}
+    likes: [SOL_BR_AppleWine, DIS_IroncapStew]
+    dislikes: [Boast]
+    verbs_bonus: {Listen: +2, Teach: +1}
+    events:
+      - id: EVT_HARK_STORY
+        req: {night: true, item: SOL_BR_AppleWine}
+        eff: {rel: +4, hint: HINT_GATE_HONOR}
+    observer_followup: ["무거운 갑옷보다 무거운 이야기가 있었다."]

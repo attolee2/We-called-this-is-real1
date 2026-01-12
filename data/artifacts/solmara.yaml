@@ -1,0 +1,682 @@
+# Solmara artifact roster (18 items)
+Artifact:
+  - id: ARK_ART_TownCharm
+    name: "성문 부적"
+    tier: Common
+    type: Talisman
+    equip_slot: Charm
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 5
+        notes: "감정 이벤트 가중 +5%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Trade]
+      where: "Rodendell_Market"
+      rules: "친화 랭크≥1"
+    upgrade:
+      method: Smithy
+      mats:
+        - MAT_SilverIngot x1
+      caps: {}
+    flavor: "성문을 드나드는 상인들이 전하는 작은 행운."
+
+  - id: ARK_ART_ScribeQuill
+    name: "서기관의 깃펜"
+    tier: Common
+    type: Tool
+    equip_slot: Tool
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_JOURNAL_CLARITY
+        value: 10
+        notes: "일기 키워드 판정 +10%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 1
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Trade, Quest]
+      where: "Inn_Shop"
+      rules: "일기 튜토리얼 완료"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "생각을 선명히 적어주는 검은 깃."
+
+  - id: ARK_ART_FieldBrooch
+    name: "들판 브로치"
+    tier: Common
+    type: Trinket
+    equip_slot: Trinket
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 3
+        notes: "우호 이벤트 가중 +3%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Quest]
+      where: "Braile_Farm"
+      rules: "목장 소년 이벤트1"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "햇살에 반짝이는 밀 이삭 모양."
+
+  - id: ARK_ART_LanternMossVial
+    name: "랜턴이끼 바이얼"
+    tier: Uncommon
+    type: Artifact
+    equip_slot: Emblem
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_SPIRITSIGHT
+        value: 1
+        notes: "밤에 유령 시야 획득"
+    active:
+      has_active: true
+      cooldown_sec: 120
+      charges_per_life: 3
+      cast_time_sec: 0.0
+      duration_sec: 20
+      effect:
+        - id: ACT_ORGEL_HINT
+          value: 1
+          notes: "가까운 타일 방향 미세 발광"
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Craft, Dungeon]
+      where: "Mine, RiverMarsh"
+      rules: "랜턴이끼 + 유리병"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "작은 빛이 길을 기억한다."
+
+  - id: ARK_ART_ThymeSignet
+    name: "백리향 인장반지"
+    tier: Uncommon
+    type: Artifact
+    equip_slot: Trinket
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 8
+        notes: "대화 집중 선택지 가중 +8%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 1
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival, Trade]
+      where: "Tournament_Stands"
+      rules: "응원 미니게임 B랭크"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "허브 향이 마음을 차분히."
+
+  - id: ARK_ART_MintRibbon
+    name: "습지민트 리본"
+    tier: Uncommon
+    type: Talisman
+    equip_slot: Charm
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 6
+        notes: "긴장 완화 분기 보정 +6%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 1
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Quest]
+      where: "River_Fishing"
+      rules: "민트 송어 구이 제작 완료"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "상쾌함이 말을 부드럽게 만든다."
+
+  - id: ARK_ART_RoseCameo
+    name: "로열로즈 카메오"
+    tier: Uncommon
+    type: Trinket
+    equip_slot: Trinket
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_GATE_OVERRIDE
+        value: 1
+        notes: "애정 게이트 난이도 -1단계"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 2
+      Friendly: 0
+      Sad: 0
+      Hostile: -1
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "RoyalBall"
+      rules: "댄스 A랭크"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "무도회의 잔향이 머문다."
+
+  - id: ARK_ART_OtterCharm
+    name: "수달 부적"
+    tier: Uncommon
+    type: Talisman
+    equip_slot: Charm
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 5
+        notes: "동물 상호작용 우호 보정 +5%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Hidden]
+      where: "River_OtterSpot"
+      rules: "반짝이는 물건 선물"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "호기심 많은 친구의 축복."
+
+  - id: ARK_ART_StableBell
+    name: "마구간 방울"
+    tier: Uncommon
+    type: Trinket
+    equip_slot: Trinket
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 6
+        notes: "동물 쓰다듬기 안정 +6%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Quest]
+      where: "Braile_Farm"
+      rules: "리안 분실 송아지 이벤트"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "작은 방울 소리에 마음이 쉰다."
+
+  - id: ARK_ART_TimeCrystal
+    name: "시간의 수정"
+    tier: Rare
+    type: Relic
+    equip_slot: Emblem
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 10
+        notes: "회고/용서 선택지 가중 +10%"
+    active:
+      has_active: true
+      cooldown_sec: 600
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect:
+        - id: ACT_UNDO_CHOICE
+          value: 1
+          notes: "최근 선택 1회 되돌리기"
+    emotion_tuning:
+      Affectionate: 1
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 0
+    observer_hooks:
+      - packetId: OBS_SOL_TIME_ECHO
+        notes: "되감기 잔상"
+    orgel_synergy:
+      sequenceId: ORGEL_SOLMARA_01
+      tile_bonus:
+        E07_Forgiveness:
+          harmony_bias: 0.3
+    acquire:
+      source: [Dungeon]
+      where: "MineMini_Final"
+      rules: "퍼즐 방 클리어"
+    upgrade:
+      method: Festival
+      mats:
+        - MAT_SilverIngot x2
+        - IN_FireflyEssence x1
+      caps:
+        passive: "+20%"
+        active: "-20% CD"
+    flavor: "돌이킬 수 없던 마음에도 틈이 생긴다."
+
+  - id: ARK_ART_FateStone
+    name: "운명의 돌"
+    tier: Rare
+    type: Relic
+    equip_slot: Emblem
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_GATE_OVERRIDE
+        value: 1
+        notes: "관계 이벤트 분기 가드 -1"
+    active:
+      has_active: true
+      cooldown_sec: 900
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 30
+      effect:
+        - id: ACT_RELATION_BURST
+          value: 1
+          notes: "대화 중 친밀 랭크 +1(한시)"
+    emotion_tuning:
+      Affectionate: 1
+      Friendly: 0
+      Sad: 0
+      Hostile: -1
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy:
+      sequenceId: ORGEL_SOLMARA_01
+      tile_bonus:
+        E04_Love:
+          harmony_bias: 0.25
+    acquire:
+      source: [Quest]
+      where: "RoyalBall"
+      rules: "히든 파트너 루트 달성"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "선택을 반복하면 길이 바뀐다."
+
+  - id: ARK_ART_EmotionMirror
+    name: "감정의 거울"
+    tier: Rare
+    type: Artifact
+    equip_slot: Tool
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 12
+        notes: "NPC 감정 HUD 가시화"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 1
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Craft]
+      where: "AlchemistLab"
+      rules: "유리 + 룬잉크 + 반딧불 정수"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "말하지 않아도 보인다."
+
+  - id: ARK_ART_KnightPennant
+    name: "기사단 페넌트"
+    tier: Rare
+    type: Talisman
+    equip_slot: Emblem
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 10
+        notes: "응원/토너먼트 반응 보정 +10%"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 1
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "Tournament"
+      rules: "관람 미니게임 S랭크"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "깃발은 마음을 모은다."
+
+  - id: ARK_ART_SteelLocket
+    name: "강철 로켓"
+    tier: Rare
+    type: Trinket
+    equip_slot: Trinket
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 8
+        notes: "슬픔→평온 전환 보정 +8%"
+    active:
+      has_active: true
+      cooldown_sec: 300
+      charges_per_life: 2
+      cast_time_sec: 0.0
+      duration_sec: 10
+      effect:
+        - id: ACT_EMO_PURIFY
+          value: 1
+          notes: "Hex/불협 잔재 제거"
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 1
+      Hostile: 0
+      Neutral: 1
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Hidden]
+      where: "Gate_Sad_Forest"
+      rules: "슬픔 게이트 통과 후 벤치 상호작용"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "무거운 마음을 잠시 닫아 준다."
+
+  - id: ARK_ART_OrgelKey
+    name: "오르골의 열쇠"
+    tier: Epic
+    type: Instrument
+    equip_slot: Tool
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 15
+        notes: "실타래 하모니 보정 +15%"
+    active:
+      has_active: true
+      cooldown_sec: 0
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect:
+        - id: ACT_OBSERVER_CALL
+          value: 1
+          notes: "소형 관찰자 컷신 즉시 호출(한번)"
+    emotion_tuning:
+      Affectionate: 0
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy:
+      sequenceId: ORGEL_SOLMARA_01
+      tile_bonus:
+        E01_Lonely:
+          harmony_bias: 0.1
+        E09_Observer:
+          harmony_bias: 0.4
+    acquire:
+      source: [Quest]
+      where: "Orgel_Path"
+      rules: "실타래 1회 완주 보상(히든)"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "음악은 기억을 열쇠처럼 연다."
+
+  - id: ARK_ART_RoseMask
+    name: "로즈 마스크"
+    tier: Epic
+    type: Talisman
+    equip_slot: Charm
+    isReincarnationRelated: false
+    passive:
+      - id: PASS_GATE_OVERRIDE
+        value: 2
+        notes: "무도회 예절/대화 체크 2단 완화"
+    active:
+      has_active: false
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 0
+      effect: []
+    emotion_tuning:
+      Affectionate: 2
+      Friendly: 0
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "RoyalBall"
+      rules: "변장 루트 성공 + 파트너 호감 B이상"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "진짜 얼굴보다 더 진짜인 미소."
+
+  - id: ARK_ART_ValorLaurels
+    name: "명예의 월계"
+    tier: Epic
+    type: Emblem
+    equip_slot: Emblem
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_EMO_GAIN
+        value: 12
+        notes: "용기/책임 선택지 가중 +12%"
+    active:
+      has_active: true
+      cooldown_sec: 1200
+      charges_per_life: 1
+      cast_time_sec: 0.0
+      duration_sec: 20
+      effect:
+        - id: ACT_GATE_FORCE
+          value: 1
+          notes: "우호/애정 게이트 1회 강제 개방"
+    emotion_tuning:
+      Affectionate: 1
+      Friendly: 1
+      Sad: 0
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy: null
+    acquire:
+      source: [Festival]
+      where: "Tournament_Final"
+      rules: "특별 엔딩 연출 시"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "누군가의 박수가 너를 기억하게 한다."
+
+  - id: ARK_ART_WhiteLilac
+    name: "하얀 라일락"
+    tier: Mythic
+    type: Relic
+    equip_slot: None
+    isReincarnationRelated: true
+    passive:
+      - id: PASS_SPIRITSIGHT
+        value: 1
+        notes: "상시 정령/유령 시야"
+      - id: PASS_EMO_GAIN
+        value: 20
+        notes: "용서·관찰 선택지 +20%"
+    active:
+      has_active: true
+      cooldown_sec: 0
+      charges_per_life: 0
+      cast_time_sec: 0.0
+      duration_sec: 8
+      effect:
+        - id: ACT_OBSERVER_CALL
+          value: 1
+          notes: "라일락 컷신(대형) 호출"
+    emotion_tuning:
+      Affectionate: 2
+      Friendly: 0
+      Sad: 2
+      Hostile: 0
+      Neutral: 0
+    observer_hooks: []
+    orgel_synergy:
+      sequenceId: ORGEL_SOLMARA_01
+      tile_bonus:
+        E07_Forgiveness:
+          harmony_bias: 0.5
+        E09_Observer:
+          harmony_bias: 0.5
+    acquire:
+      source: [Hidden]
+      where: "Rodendell_Garden_Lilac"
+      rules: "전생≥3, 실타래1회, 무도회 힌트 수집"
+    upgrade:
+      method: None
+      mats: []
+      caps: {}
+    flavor: "용서는 언제나 빛의 모양을 하고 있다."

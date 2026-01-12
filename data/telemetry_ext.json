@@ -1,0 +1,7 @@
+{
+  "events": [
+    {"id": "E_DANCE_GRADE", "when": "danceFinish", "params": ["chartId", "grade", "partner"]},
+    {"id": "E_REP_CHANGE", "when": "repChange", "params": ["faction", "delta"]},
+    {"id": "E_RECIPE_LEARN", "when": "learnRecipe", "params": ["recipeId"]}
+  ]
+}

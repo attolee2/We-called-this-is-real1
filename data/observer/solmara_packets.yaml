@@ -1,0 +1,13 @@
+Observer:
+  - id: OBS_SOL_TIME_ECHO
+    scene: 99_Observer_Mode
+    camera: path_obstime_01
+    narration: "obs.sol.01"
+  - id: OBS_SOL_GATE_GUARD
+    scene: 99_Observer_Mode
+    camera: path_gate_02
+    narration: "obs.sol.02"
+  - id: OBS_SOL_POND_STARS
+    scene: 99_Observer_Mode
+    camera: path_pond_03
+    narration: "obs.sol.03"

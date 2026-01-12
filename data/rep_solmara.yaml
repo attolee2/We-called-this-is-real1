@@ -1,0 +1,36 @@
+Reputation:
+  factions:
+    court: {name: "왕실 궁정", thresholds: [10, 30, 60, 100]}
+    knights: {name: "왕국 기사단", thresholds: [10, 25, 50, 90]}
+    guild: {name: "상인·장인 조합", thresholds: [10, 25, 50, 80]}
+
+Unlocks:
+  court:
+    10: ["BALL_ENTRY"]
+    30: ["GALLERY_PRIVATE_VIEW"]
+    60: ["ROYAL_BALCONY_ACCESS"]
+    100: ["TITLE_GUARDIAN_OF_REALM"]
+  knights:
+    10: ["ARENA_PRACTICE"]
+    25: ["JOUST_TRIAL"]
+    50: ["TOURNAMENT_ENTRY"]
+    90: ["OATH_CREST"]
+  guild:
+    10: ["FAIR_PRICE"]
+    25: ["QUALITY_TIER_UP"]
+    50: ["MASTER_CRAFT_SLOT"]
+    80: ["MARKET_BACKROOM"]
+
+Quests:
+  - id: SOL_QST_BALL_ENTRY
+    title: 왕실 무도회 입장 허가
+    req: {rep.court: 10}
+    reward: {flag: BALL_ENTRY, rep.court: +5}
+  - id: SOL_QST_GUARDIANS_TOURNAMENT
+    title: 기사 토너먼트 참가권
+    req: {rep.knights: 50}
+    reward: {flag: TOURNAMENT_ENTRY, title: KINGDOM_GUARDIAN_CANDIDATE}
+  - id: SOL_QST_MASKED_GALA
+    title: 가면 무도회 — 몰래 입장
+    req: {item: ACC_SimpleMask, time: Night}
+    reward: {rep.court: +8, hint: HINT_TRUEENDING_02}

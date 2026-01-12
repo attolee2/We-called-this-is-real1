@@ -1,0 +1,272 @@
+DanceCharts:
+  - id: PAT_BALL_001
+    bpm: 95
+    lanes: 2
+    seq: ["L", "R", "L", "R", "L+R", "Pause", "L", "R"]
+    window_ms: {perfect: 60, good: 100}
+    camera: [push_in, hold, pull_out]
+    light: [petals_soft]
+    fx: {ui: ribbon_sweep, sfx: step_soft}
+    grade: {A: 92, B: 80, C: 65}
+
+  - id: PAT_BALL_002
+    bpm: 96
+    lanes: 2
+    seq: ["L", "HoldR(2)", "R", "HoldL(2)", "L+R", "Spin", "R"]
+    window_ms: {perfect: 58, good: 98}
+    camera: [orbit_slow]
+    light: [lantern_glow]
+    fx: {ui: glow_trail, sfx: fabric_swish}
+    grade: {A: 93, B: 81, C: 66}
+
+  - id: PAT_BALL_003
+    bpm: 98
+    lanes: 2
+    seq: ["L", "R", "L", "L", "R", "R", "L+R", "Spin"]
+    camera: [pan_left, pan_right]
+    light: [firefly_field]
+    fx: {ui: spark_small, sfx: heel_click}
+    grade: {A: 92, B: 80, C: 65}
+
+  - id: PAT_BALL_004
+    bpm: 100
+    lanes: 2
+    seq: ["R", "L", "R", "HoldR(3)", "Pause", "L+R"]
+    light: [chandelier_twinkle]
+    camera: [push_in]
+    fx: {ui: shimmer, sfx: bell_soft}
+    grade: {A: 94, B: 82, C: 67}
+
+  - id: PAT_BALL_005
+    bpm: 102
+    lanes: 2
+    seq: ["L", "HoldL(2)", "R", "HoldR(2)", "L+R", "Spin", "Pause"]
+    light: [moonbeam_sweep]
+    camera: [tilt_up]
+    fx: {ui: petal_ring, sfx: step_brush}
+    grade: {A: 94, B: 83, C: 68}
+
+  - id: PAT_BALL_006
+    bpm: 104
+    lanes: 2
+    seq: ["L", "R", "L+R", "HoldL(2)", "R", "Spin", "R"]
+    light: [curtain_wave]
+    camera: [dolly_left]
+    fx: {ui: lace_fold, sfx: breath_sync}
+    grade: {A: 95, B: 84, C: 70}
+
+  - id: PAT_BALL_007
+    bpm: 106
+    lanes: 2
+    seq: ["R", "L", "R", "L", "R", "HoldR(2)", "L+R"]
+    light: [window_starlight]
+    camera: [pull_out]
+    fx: {ui: star_dust, sfx: skirt_turn}
+    grade: {A: 95, B: 84, C: 70}
+
+  - id: PAT_BALL_008
+    bpm: 108
+    lanes: 2
+    seq: ["L", "Pause", "L", "R", "HoldL(3)", "R", "L+R"]
+    light: [candles_bloom]
+    camera: [orbit_fast]
+    fx: {ui: bloom_soft, sfx: hush}
+    grade: {A: 95, B: 85, C: 71}
+
+  - id: PAT_BALL_009
+    bpm: 110
+    lanes: 2
+    seq: ["R", "HoldR(2)", "R", "L", "HoldL(2)", "L+R", "Spin"]
+    light: [frost_glitter]
+    camera: [pan_right]
+    fx: {ui: feather_fall, sfx: toe_slide}
+    grade: {A: 95, B: 85, C: 72}
+
+  - id: PAT_BALL_010
+    bpm: 112
+    lanes: 2
+    seq: ["L", "L", "R", "R", "L+R", "Pause", "Spin"]
+    light: [rose_reflection]
+    camera: [tilt_down]
+    fx: {ui: rose_arc, sfx: step_crisp}
+    grade: {A: 96, B: 86, C: 72}
+
+  - id: PAT_BALL_011
+    bpm: 114
+    lanes: 2
+    seq: ["L", "HoldL(2)", "L", "R", "HoldR(2)", "R", "L+R"]
+    light: [ribbon_wave]
+    camera: [dolly_in]
+    fx: {ui: ribbon_pair, sfx: breath_soft}
+    grade: {A: 96, B: 86, C: 73}
+
+  - id: PAT_BALL_012
+    bpm: 116
+    lanes: 2
+    seq: ["R", "R", "L", "L", "R", "HoldR(2)", "L+R"]
+    light: [dew_sparkle]
+    camera: [pan_center]
+    fx: {ui: dew_ring, sfx: step_soft}
+    grade: {A: 96, B: 87, C: 74}
+
+  - id: PAT_BALL_013
+    bpm: 118
+    lanes: 2
+    seq: ["L", "Pause", "R", "Pause", "L+R", "Spin", "Pause"]
+    light: [gobo_leaf]
+    camera: [orbit_slow]
+    fx: {ui: leaf_sweep, sfx: air_swirl}
+    grade: {A: 96, B: 87, C: 74}
+
+  - id: PAT_BALL_014
+    bpm: 120
+    lanes: 2
+    seq: ["R", "L", "R", "L+R", "HoldL(2)", "R"]
+    light: [veil_wave]
+    camera: [push_in]
+    fx: {ui: veil_glow, sfx: step_press}
+    grade: {A: 97, B: 88, C: 75}
+
+  - id: PAT_BALL_015
+    bpm: 122
+    lanes: 2
+    seq: ["L", "HoldR(2)", "R", "HoldL(2)", "L+R", "Spin"]
+    light: [mirror_shard_soft]
+    camera: [tilt_up]
+    fx: {ui: shard_twinkle, sfx: ring_soft}
+    grade: {A: 97, B: 88, C: 76}
+
+  - id: PAT_BALL_016
+    bpm: 124
+    lanes: 2
+    seq: ["R", "L", "R", "R", "L", "HoldL(2)", "L+R"]
+    light: [plume_soft]
+    camera: [pull_out]
+    fx: {ui: plume_arc, sfx: heel_tap}
+    grade: {A: 97, B: 89, C: 76}
+
+  - id: PAT_BALL_017
+    bpm: 126
+    lanes: 2
+    seq: ["L", "L", "R", "HoldR(3)", "L+R", "Spin"]
+    light: [chime_glow]
+    camera: [pan_left]
+    fx: {ui: chime_spark, sfx: bell_chime}
+    grade: {A: 97, B: 89, C: 77}
+
+  - id: PAT_BALL_018
+    bpm: 128
+    lanes: 2
+    seq: ["R", "R", "L+R", "HoldL(2)", "R", "Pause"]
+    light: [curtain_wave]
+    camera: [orbit_fast]
+    fx: {ui: curtain_fold, sfx: breath_sync}
+    grade: {A: 97, B: 90, C: 78}
+
+  - id: PAT_BALL_019
+    bpm: 130
+    lanes: 2
+    seq: ["L", "HoldL(3)", "R", "HoldR(3)", "L+R"]
+    light: [stairlight]
+    camera: [dolly_left]
+    fx: {ui: step_glow, sfx: step_brush}
+    grade: {A: 97, B: 90, C: 78}
+
+  - id: PAT_BALL_020
+    bpm: 132
+    lanes: 2
+    seq: ["R", "L", "R", "L", "R", "L+R", "Spin"]
+    light: [lattice_soft]
+    camera: [tilt_down]
+    fx: {ui: lattice_spark, sfx: toe_slide}
+    grade: {A: 98, B: 91, C: 79}
+
+  - id: PAT_BALL_021
+    bpm: 134
+    lanes: 2
+    seq: ["L", "Pause", "L+R", "HoldR(2)", "R", "L"]
+    light: [petals_soft]
+    camera: [push_in]
+    fx: {ui: petal_rain, sfx: skirt_turn}
+    grade: {A: 98, B: 91, C: 80}
+
+  - id: PAT_BALL_022
+    bpm: 136
+    lanes: 2
+    seq: ["R", "HoldR(2)", "L", "HoldL(2)", "L+R", "Pause"]
+    light: [lantern_glow]
+    camera: [pan_right]
+    fx: {ui: glow_ribbon, sfx: hush}
+    grade: {A: 98, B: 92, C: 80}
+
+  - id: PAT_BALL_023
+    bpm: 138
+    lanes: 2
+    seq: ["L", "R", "L", "R", "L+R", "HoldL(2)", "Spin"]
+    light: [firefly_field]
+    camera: [orbit_slow]
+    fx: {ui: spark_rise, sfx: heel_click}
+    grade: {A: 98, B: 92, C: 81}
+
+  - id: PAT_BALL_024
+    bpm: 140
+    lanes: 2
+    seq: ["R", "L+R", "R", "L", "HoldR(2)", "L"]
+    light: [chandelier_twinkle]
+    camera: [pull_out]
+    fx: {ui: shimmer_soft, sfx: bell_soft}
+    grade: {A: 98, B: 93, C: 82}
+
+  - id: PAT_BALL_025
+    bpm: 142
+    lanes: 2
+    seq: ["L", "HoldL(2)", "R", "R", "L+R", "Spin", "Pause"]
+    light: [moonbeam_sweep]
+    camera: [tilt_up]
+    fx: {ui: petal_ring, sfx: step_crisp}
+    grade: {A: 98, B: 93, C: 82}
+
+  - id: PAT_BALL_026
+    bpm: 144
+    lanes: 2
+    seq: ["R", "R", "L+R", "HoldR(3)", "L", "Spin"]
+    light: [curtain_wave]
+    camera: [dolly_in]
+    fx: {ui: lace_fold, sfx: breath_soft}
+    grade: {A: 98, B: 93, C: 82}
+
+  - id: PAT_BALL_027
+    bpm: 146
+    lanes: 2
+    seq: ["L", "L", "R", "HoldL(3)", "R", "L+R"]
+    light: [window_starlight]
+    camera: [pan_center]
+    fx: {ui: star_dust, sfx: skirt_turn}
+    grade: {A: 98, B: 94, C: 83}
+
+  - id: PAT_BALL_028
+    bpm: 148
+    lanes: 2
+    seq: ["R", "Pause", "L", "Pause", "R", "L+R", "Spin"]
+    light: [candles_bloom]
+    camera: [orbit_fast]
+    fx: {ui: bloom_soft, sfx: hush}
+    grade: {A: 99, B: 94, C: 83}
+
+  - id: PAT_BALL_029
+    bpm: 150
+    lanes: 2
+    seq: ["L", "R", "L+R", "HoldL(2)", "R", "HoldR(2)"]
+    light: [frost_glitter]
+    camera: [push_in]
+    fx: {ui: feather_fall, sfx: toe_slide}
+    grade: {A: 99, B: 95, C: 84}
+
+  - id: PAT_BALL_030
+    bpm: 152
+    lanes: 2
+    seq: ["R", "L", "R", "L+R", "Spin", "Pause", "Spin"]
+    light: [rose_reflection]
+    camera: [tilt_down]
+    fx: {ui: rose_arc, sfx: finale_swish}
+    grade: {A: 99, B: 95, C: 85}

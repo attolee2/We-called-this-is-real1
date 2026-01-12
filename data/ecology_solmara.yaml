@@ -1,0 +1,205 @@
+# Solmara ecology quick reference for CODEX ingestion
+SolmaraEcology:
+  creatures:
+    - id: SOL_CRE_MeadowHare
+      name: 초원의 토끼
+      rarity: Common
+      habitats: [Farmland]
+      behavior: Skittish
+      drops:
+        - item: FUR_Soft
+          qty: 1
+          use: [Craft]
+      emotion_shift: +Friendly
+      notes: "농장 주변을 뛰어다니며 긴장한 마음을 풀어 준다."
+    - id: SOL_CRE_IroncapBoar
+      name: 아이언캡 멧돼지
+      rarity: Uncommon
+      habitats: [Forest]
+      behavior: Territorial
+      drops:
+        - item: MEAT_Boar
+          qty: 1
+          use: [Cooking]
+        - item: SOL_FL_Ironcap
+          qty: 1
+          use: [Cooking, Alchemy]
+      emotion_shift: +Hostile
+      notes: "분노 상태가 되면 돌처럼 단단해져 돌진한다."
+    - id: SOL_CRE_MarshOtter
+      name: 습지 수달
+      rarity: Uncommon
+      habitats: [RiverMarsh]
+      behavior: Curious
+      drops:
+        - item: FI_OtterPearl
+          qty: 1
+          use: [Craft, Quest]
+      emotion_shift: +Friendly
+      notes: "반짝이는 물건을 보여주면 기분이 좋아져 길을 안내한다."
+    - id: SOL_CRE_FireflySwarm
+      name: 반딧불 무리
+      rarity: Common
+      habitats: [Forest, RiverMarsh]
+      behavior: Curious
+      drops:
+        - item: IN_FireflyEssence
+          qty: 1
+          use: [Alchemy, Dye]
+      emotion_shift: +Affectionate
+      notes: "음악 리듬에 맞춰 빛이 맥동한다."
+    - id: SOL_CRE_HillStag
+      name: 구릉지 사슴
+      rarity: Rare
+      habitats: [Farmland, Forest]
+      behavior: Wary
+      drops:
+        - item: HORN_Stag
+          qty: 1
+          use: [Craft]
+      emotion_shift: +Calm
+      notes: "연못가에 달빛이 비칠 때 모습을 드러낸다."
+    - id: SOL_CRE_StonefinTrout
+      name: 돌지느러미 송어
+      rarity: Common
+      habitats: [RiverMarsh]
+      behavior: Steady
+      drops:
+        - item: FISH_StonefinTrout
+          qty: 1
+          use: [Cooking]
+      emotion_shift: Neutral
+      notes: "민트 향과 함께 조리하면 집중이 유지된다."
+    - id: SOL_CRE_LilacWisp
+      name: 라일락 위습
+      rarity: Rare
+      habitats: [City_Garden]
+      behavior: Ethereal
+      drops:
+        - item: SPIRIT_Fragment
+          qty: 1
+          use: [Alchemy, Quest]
+      emotion_shift: +Sad
+      notes: "라일락 정원 밤에만 나타나 용서의 메시지를 속삭인다."
+    - id: SOL_CRE_WindspunMoth
+      name: 바람실나방
+      rarity: Common
+      habitats: [Forest]
+      behavior: Skittish
+      drops:
+        - item: WING_Moth
+          qty: 2
+          use: [Dye]
+      emotion_shift: Neutral
+      notes: "랜턴이끼 빛에 이끌려와 부드러운 날갯짓을 한다."
+    - id: SOL_CRE_SilverGoose
+      name: 은빛 거위
+      rarity: Uncommon
+      habitats: [Farmland]
+      behavior: Pack
+      drops:
+        - item: EGG_Goose
+          qty: 1
+          use: [Cooking]
+      emotion_shift: +Friendly
+      notes: "마이라 여관의 조식 재료로 인기다."
+  flora:
+    - id: SOL_FL_KingsThyme
+      name: 왕가의 백리향
+      rarity: Uncommon
+      biomes: [City, Farmland]
+      season: [Spring, Summer]
+      gather_yield: "2-4"
+      uses: [Cooking, Alchemy]
+      effects: [Calm, Focus]
+      notes: "연금술사가 집중 향수를 만들 때 필수 재료."
+    - id: SOL_FL_MarshMint
+      name: 습지 민트
+      rarity: Common
+      biomes: [RiverMarsh]
+      season: [Summer]
+      gather_yield: "2-4"
+      uses: [Cooking, Brew]
+      effects: [Calm]
+      notes: "민트 송어 구이와 차를 통해 긴장을 풀어 준다."
+    - id: SOL_FL_LanternMoss
+      name: 랜턴 이끼
+      rarity: Rare
+      biomes: [RiverMarsh, MountainCave]
+      season: [All]
+      gather_yield: "1-1"
+      uses: [Alchemy, Craft, Dye]
+      effects: [SpiritSight]
+      notes: "밤에 은은히 빛나 정령 시야를 돕는다."
+    - id: SOL_FL_SilverWheat
+      name: 은빛 밀
+      rarity: Common
+      biomes: [Farmland]
+      season: [Summer, Autumn]
+      gather_yield: "2-5"
+      uses: [Cooking, Craft]
+      effects: []
+      notes: "기사단 건빵과 파이 반죽의 기본 재료."
+    - id: SOL_FL_RoyalRose
+      name: 로열 로즈
+      rarity: Rare
+      biomes: [City]
+      season: [Spring]
+      gather_yield: "1-1"
+      uses: [Brew, Craft, Festival]
+      effects: [Affectionate]
+      notes: "무도회 장식과 향료로 사랑받는다."
+    - id: SOL_FL_PondReed
+      name: 연못 갈대
+      rarity: Common
+      biomes: [RiverMarsh]
+      season: [Spring, Autumn]
+      gather_yield: "2-3"
+      uses: [Craft]
+      effects: []
+      notes: "관찰자 모드 장식을 위한 수공예 재료."
+    - id: SOL_FL_HearthLavender
+      name: 벽난로 라벤더
+      rarity: Uncommon
+      biomes: [Farmland, City]
+      season: [Autumn, Winter]
+      gather_yield: "1-2"
+      uses: [Brew, Craft]
+      effects: [Calm]
+      notes: "여관의 숙면 향초와 편지 보관 향주머니에 사용된다."
+  cuisine:
+    - id: SOL_FOOD_HerbToast
+      name: 허브 토스트
+      inputs: [SOL_FL_SilverWheat x1, BUTTER x1, SOL_FL_KingsThyme x1]
+      effect: {Focus: "+1/300s"}
+      notes: "농부들이 아침 훈련 전 먹는 가벼운 식사."
+    - id: SOL_FOOD_MossSoup
+      name: 이끼 수프
+      inputs: [SOL_FL_LanternMoss x1, ONION x1]
+      effect: {SpiritSight: "+1/180s"}
+      notes: "정령을 만나기 전 마음을 가라앉히는 레시피."
+    - id: SOL_FOOD_MintTrout
+      name: 민트 송어 구이
+      inputs: [FISH_StonefinTrout x1, SOL_FL_MarshMint x1, BUTTER x1]
+      effect: {Focus: "+1/480s"}
+      notes: "퍼즐 구간 집중력 상승을 돕는 요리."
+    - id: DIS_GrilledTrout
+      name: 송어 구이
+      inputs: [FISH_StonefinTrout x1, HERB_Any x1]
+      effect: {Stamina: "+1/300s"}
+      notes: "강가에서 가장 흔히 먹는 담백한 구이."
+    - id: DIS_MeadowOmelette
+      name: 초원 오믈렛
+      inputs: [EGG_Goose x1, HERB_Any x1]
+      effect: {Focus: "+1/240s"}
+      notes: "아침 시장에서 인기 있는 빠른 한 끼."
+    - id: DIS_FestivalSkewer
+      name: 축제 꼬치
+      inputs: [MEAT_Boar x1, VEG_Any x1]
+      effect: {CheerScore: "+5"}
+      notes: "토너먼트 관람 중 응원 점수를 높여준다."
+    - id: DES_HoneyPudding
+      name: 허니 푸딩
+      inputs: [MILK x1, HONEY x1]
+      effect: {Calm: "+1/180s"}
+      notes: "여관에서 나오는 달콤한 디저트."

@@ -1,0 +1,19 @@
+Tournament:
+  stages:
+    - id: ARENA_SPAR
+      type: timing
+      seq: [L, R, L+R, Pause, R, L]
+      window_ms: {perfect: 70, good: 110}
+      reward: {rep.knights: +5}
+    - id: ARENA_JOUST
+      type: lane_switch
+      lanes: 3
+      hazards: [banner, post]
+      reward: {title: LANCE_INITIATE}
+    - id: ARENA_ARCHERY
+      type: hold_precision
+      rings: [800ms, 500ms, 300ms]
+      reward: {item: ACC_EagleBrooch}
+
+Titles:
+  KINGDOM_GUARDIAN: {req: [ARENA_SPAR:A, ARENA_JOUST:A, ARENA_ARCHERY:A]}

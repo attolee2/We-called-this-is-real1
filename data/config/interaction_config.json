@@ -1,0 +1,116 @@
+{
+    "verbs": {
+        "Greet": {
+            "cd_sec": 30,
+            "rel": [
+                0,
+                1
+            ]
+        },
+        "SmallTalk": {
+            "cd_sec": 60,
+            "rel": [
+                0,
+                2
+            ]
+        },
+        "Gift": {
+            "cd_sec": 120,
+            "daily_cap": 1,
+            "diminish": 0.5,
+            "rel": [
+                1,
+                6
+            ]
+        },
+        "Listen": {
+            "cd_sec": 90,
+            "rel": [
+                2,
+                4
+            ]
+        },
+        "Apologize": {
+            "cd_sec": 300,
+            "requiresFlag": "CONFLICT",
+            "rel": [
+                2,
+                6
+            ]
+        },
+        "Encourage": {
+            "cd_sec": 120,
+            "rel": [
+                2,
+                3
+            ]
+        },
+        "PerformMusic": {
+            "cd_sec": 120,
+            "rel": [
+                0,
+                5
+            ]
+        },
+        "Play": {
+            "cd_sec": 120,
+            "rel": [
+                2,
+                3
+            ]
+        },
+        "Teach": {
+            "cd_sec": 180,
+            "rel": [
+                2,
+                3
+            ]
+        },
+        "ShareMeal": {
+            "cd_sec": 180,
+            "rel": [
+                2,
+                4
+            ]
+        },
+        "ShareDrink": {
+            "cd_sec": 180,
+            "rel": [
+                2,
+                4
+            ]
+        },
+        "Letter": {
+            "cd_sec": 0,
+            "daily_cap": 1,
+            "rel": [
+                2,
+                3
+            ]
+        },
+        "Joke": {
+            "cd_sec": 120,
+            "rel": [
+                -2,
+                3
+            ]
+        },
+        "Promise": {
+            "cd_sec": 0,
+            "flag": "PROMISE",
+            "fail_penalty": -15,
+            "rel": [
+                3,
+                3
+            ]
+        },
+        "Confess": {
+            "cd_sec": 600,
+            "needRank": "Affection",
+            "rel": [
+                0,
+                0
+            ]
+        }
+    }
+}

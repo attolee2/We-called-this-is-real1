@@ -1,0 +1,8 @@
+ScheduleRef:
+  Smithy: [SOL_NPC_RUDGAR]
+  Gallery: [SOL_NPC_ISOLDE]
+  Gate: [SOL_NPC_TOMO, SOL_NPC_ELDEN]
+  River_Bank: [SOL_NPC_ARIN]
+  Market_HerbCart: [SOL_NPC_NIA]
+  Plaza: [SOL_NPC_PIP, SOL_NPC_LUTEA, SOL_NPC_MINA, SOL_NPC_MINO]
+  Castle_Shade: [SOL_NPC_HARK]

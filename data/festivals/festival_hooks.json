@@ -1,0 +1,48 @@
+{
+    "SOL_FE_Tournament": {
+        "minigames": [
+            "cheer_timing",
+            "betting_lite",
+            "stealth_entry"
+        ],
+        "affects": [
+            {
+                "npc": "SOL_NPC_SEIRA",
+                "verb": "Encourage",
+                "bonus": 1
+            },
+            {
+                "npc": "SOL_NPC_SENTINEL",
+                "verb": "Promise",
+                "bonus": 1
+            }
+        ],
+        "rewards": [
+            "MED_TokenValor",
+            "CLO_CapeCrimson"
+        ]
+    },
+    "SOL_FE_RoyalBall": {
+        "minigames": [
+            "dance_rhythm",
+            "etiquette_quiz",
+            "partner_choice"
+        ],
+        "affects": [
+            {
+                "npc": "SOL_NPC_MAIRA",
+                "verb": "ShareDrink",
+                "bonus": 1
+            },
+            {
+                "npc": "SOL_NPC_SEIRA",
+                "verb": "Confess",
+                "bonus_percent": 10
+            }
+        ],
+        "rewards": [
+            "ACC_MaskSilk",
+            "HINT_BaretosTruth01"
+        ]
+    }
+}

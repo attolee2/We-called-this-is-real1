@@ -1,0 +1,14 @@
+{
+  "orgel.hint.correct": "멜로디가 맞물립니다.",
+  "orgel.success.soft": "조용한 미소가 번졌습니다.",
+  "orgel.success.brilliant": "꽃잎이 폭죽처럼 흩날립니다!",
+  "orgel.fail.calm": "소리는 멈추었지만 마음은 고요합니다.",
+  "orgel.fail.silent": "침묵이 내려앉습니다.",
+  "dance.ui.ready": "자세를 가다듬으세요.",
+  "dance.ui.perfect": "완벽!",
+  "dance.ui.good": "좋아요",
+  "dance.ui.miss": "실수",
+  "tournament.spar.intro": "기본기부터 다집니다.",
+  "tournament.joust.intro": "창을 가볍게, 시선은 멀리.",
+  "tournament.archery.intro": "호흡을 멈추는 순간."
+}

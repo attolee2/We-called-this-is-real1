@@ -1,0 +1,439 @@
+{
+    "npcs": [
+        {
+            "npcId": "SOL_NPC_SEIRA",
+            "name": "\uc138\uc774\ub77c",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Any",
+                        "rel": 1,
+                        "line": "dlg.seira.greet.{emotion}"
+                    }
+                ],
+                "SmallTalk": [
+                    {
+                        "when": "Day",
+                        "rel": 1,
+                        "line": "dlg.seira.smalltalk.1"
+                    }
+                ],
+                "Encourage": [
+                    {
+                        "when": "TournamentWeek",
+                        "rel": 2,
+                        "line": "dlg.seira.encourage"
+                    }
+                ],
+                "PerformMusic": [
+                    {
+                        "need": "Instrument",
+                        "rel": 2,
+                        "line": "dlg.seira.music.react"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "ACC_CapeCrimson",
+                        "rel": 4,
+                        "line": "dlg.seira.gift.cape"
+                    },
+                    {
+                        "item": "SOL_DI_RoyalSteak",
+                        "rel": 3,
+                        "line": "dlg.seira.gift.steak"
+                    },
+                    {
+                        "item": "SOL_BR_RoyalRoseTea",
+                        "rel": 2,
+                        "line": "dlg.seira.gift.tea"
+                    }
+                ],
+                "Confess": {
+                    "needRank": "Affection",
+                    "successLine": "dlg.seira.confess.yes",
+                    "failLine": "dlg.seira.confess.no"
+                },
+                "QuestHook": [
+                    {
+                        "id": "EVT_SEIRA_SPARRING",
+                        "cond": "rank\u2265Friendly & Day",
+                        "line": "dlg.seira.q.spar"
+                    },
+                    {
+                        "id": "EVT_SEIRA_GATEPASS",
+                        "cond": "Friendly & !PASS",
+                        "line": "dlg.seira.q.pass"
+                    },
+                    {
+                        "id": "EVT_SEIRA_BALL_PARTNER",
+                        "cond": "Affection & RoyalBall",
+                        "line": "dlg.seira.q.ball"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_BERTA",
+            "name": "\ubca0\ub974\ud0c0",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Day",
+                        "rel": 0,
+                        "line": "dlg.berta.greet"
+                    }
+                ],
+                "Teach": [
+                    {
+                        "topic": "Alchemy",
+                        "rel": 2,
+                        "line": "dlg.berta.teach.alch"
+                    }
+                ],
+                "Listen": [
+                    {
+                        "when": "Night",
+                        "rel": 2,
+                        "line": "dlg.berta.listen.sad"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "MAT_RuneInk",
+                        "rel": 4,
+                        "line": "dlg.berta.gift.ink"
+                    },
+                    {
+                        "item": "SOL_FL_KingsThyme",
+                        "rel": 2,
+                        "line": "dlg.berta.gift.thyme"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_BERTA_TONIC",
+                        "cond": "has SOL_BR_FireflyElixir",
+                        "line": "dlg.berta.q.tonic"
+                    },
+                    {
+                        "id": "EVT_BERTA_DOGMA",
+                        "cond": "Friendly & journal:\uc758\uc2ec",
+                        "line": "dlg.berta.q.dogma"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_CLAUDE",
+            "name": "\ud074\ub85c\ub4dc",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Night",
+                        "rel": 1,
+                        "line": "dlg.claude.greet"
+                    }
+                ],
+                "Joke": [
+                    {
+                        "spot": "Plaza",
+                        "score": "joke",
+                        "line": "dlg.claude.joke.{result}",
+                        "rel_range": [
+                            -2,
+                            3
+                        ]
+                    }
+                ],
+                "PerformMusic": [
+                    {
+                        "rel": 3,
+                        "line": "dlg.claude.music.react",
+                        "need": null
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "ACC_MaskSilk",
+                        "rel": 4,
+                        "line": "dlg.claude.gift.mask"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_CLAUDE_MICROSHOW",
+                        "cond": "Night",
+                        "line": "dlg.claude.q.microshow"
+                    },
+                    {
+                        "id": "EVT_CLAUDE_DISGUISE",
+                        "cond": "Tournament & MASK_Simple",
+                        "line": "dlg.claude.q.disguise"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_LIAN",
+            "name": "\ub9ac\uc548",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Dusk",
+                        "rel": 1,
+                        "line": "dlg.lian.greet"
+                    }
+                ],
+                "Listen": [
+                    {
+                        "when": "Pond",
+                        "rel": 3,
+                        "line": "dlg.lian.listen.pond"
+                    }
+                ],
+                "ShareMeal": [
+                    {
+                        "item": "SOL_DI_FarmersPotage",
+                        "rel": 3,
+                        "line": "dlg.lian.meal.potage"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "CH_CharmCollar",
+                        "rel": 3,
+                        "line": "dlg.lian.gift.collar"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_LIAN_LOSTCALF",
+                        "cond": "Dusk & Clear",
+                        "line": "dlg.lian.q.calf"
+                    },
+                    {
+                        "id": "EVT_LIAN_PONDREFLECT",
+                        "cond": "Friendly & Sad",
+                        "line": "dlg.lian.q.pond"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_MAIRA",
+            "name": "\ub9c8\uc774\ub77c",
+            "verbs": {
+                "Greet": [
+                    {
+                        "place": "Inn",
+                        "rel": 1,
+                        "line": "dlg.maira.greet"
+                    }
+                ],
+                "Listen": [
+                    {
+                        "by": "Fireplace",
+                        "rel": 3,
+                        "line": "dlg.maira.listen.fire"
+                    }
+                ],
+                "ShareDrink": [
+                    {
+                        "item": "SOL_BR_RoyalRoseTea",
+                        "rel": 3,
+                        "line": "dlg.maira.drink.rose"
+                    }
+                ],
+                "Letter": [
+                    {
+                        "rel": 2,
+                        "line": "dlg.maira.letter"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_MAIRA_LOSS",
+                        "cond": "journal:\uc0c1\uc2e4 & has SOL_BR_RoyalRoseTea",
+                        "line": "dlg.maira.q.loss"
+                    },
+                    {
+                        "id": "EVT_MAIRA_LETTER",
+                        "cond": "Affection & Letter",
+                        "line": "dlg.maira.q.letter"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_SENTINEL",
+            "name": "\uc21c\ucc30 \uae30\uc0ac",
+            "verbs": {
+                "Greet": [
+                    {
+                        "place": "Gate",
+                        "rel": 0,
+                        "line": "dlg.sentinel.greet"
+                    }
+                ],
+                "Promise": [
+                    {
+                        "flag": "PROMISE_BE_BACK_BY_DUSK",
+                        "rel": 3,
+                        "line": "dlg.sentinel.promise"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "SOL_DI_IroncapStew",
+                        "rel": 4,
+                        "line": "dlg.sentinel.gift.stew"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_SENTINEL_PASS",
+                        "cond": "has IntroLetter or SEIRA_SPARRING_DONE",
+                        "line": "dlg.sentinel.q.pass"
+                    },
+                    {
+                        "id": "EVT_SENTINEL_CHECK",
+                        "cond": "RoyalBall & disguise",
+                        "line": "dlg.sentinel.q.check.{result}"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_MINA",
+            "name": "\ubbf8\ub098",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Day",
+                        "rel": 1,
+                        "line": "dlg.mina.greet"
+                    }
+                ],
+                "Play": [
+                    {
+                        "spot": "Plaza_Square",
+                        "rel": 2,
+                        "line": "dlg.mina.play.square"
+                    }
+                ],
+                "Joke": [
+                    {
+                        "when": "Any",
+                        "rel": 2,
+                        "line": "dlg.mina.joke.react"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "PLAY_ChalkSet",
+                        "rel": 4,
+                        "line": "dlg.mina.gift.chalk"
+                    },
+                    {
+                        "item": "SWEET_HoneyTart",
+                        "rel": 3,
+                        "line": "dlg.mina.gift.tart"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_MINA_HOPSCOTCH",
+                        "cond": "Day",
+                        "line": "dlg.mina.q.hopscotch"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_MINO",
+            "name": "\ubbf8\ub178",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Dusk",
+                        "rel": 1,
+                        "line": "dlg.mino.greet"
+                    }
+                ],
+                "Joke": [
+                    {
+                        "spot": "Plaza",
+                        "rel": 2,
+                        "line": "dlg.mino.joke.play"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "TOY_WoodTop",
+                        "rel": 4,
+                        "line": "dlg.mino.gift.top"
+                    },
+                    {
+                        "item": "PLAY_ChalkSet",
+                        "rel": 2,
+                        "line": "dlg.mino.gift.chalk"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_MINO_TOP",
+                        "cond": "Has TOY_WoodTop",
+                        "line": "dlg.mino.q.top"
+                    }
+                ]
+            }
+        },
+        {
+            "npcId": "SOL_NPC_HARK",
+            "name": "\ud558\ud06c",
+            "verbs": {
+                "Greet": [
+                    {
+                        "when": "Day",
+                        "rel": 1,
+                        "line": "dlg.hark.greet"
+                    }
+                ],
+                "Listen": [
+                    {
+                        "when": "Night",
+                        "rel": 3,
+                        "line": "dlg.hark.listen.story"
+                    }
+                ],
+                "Teach": [
+                    {
+                        "topic": "Valor",
+                        "rel": 2,
+                        "line": "dlg.hark.teach.guard"
+                    }
+                ],
+                "Gift": [
+                    {
+                        "item": "SOL_BR_AppleWine",
+                        "rel": 4,
+                        "line": "dlg.hark.gift.wine"
+                    },
+                    {
+                        "item": "SOL_DI_IroncapStew",
+                        "rel": 3,
+                        "line": "dlg.hark.gift.stew"
+                    }
+                ],
+                "QuestHook": [
+                    {
+                        "id": "EVT_HARK_STORY",
+                        "cond": "Night & SOL_BR_AppleWine",
+                        "line": "dlg.hark.q.story"
+                    }
+                ]
+            }
+        }
+    ]
+}

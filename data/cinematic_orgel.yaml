@@ -1,0 +1,12 @@
+Cinematic:
+  - id: ORGEL_SUCCESS_SOFT
+    steps: [fade_in(1.0), cam_push(2.0), ui_blossom, sfx_chime_soft, text("orgel.success.soft")]
+  - id: ORGEL_SUCCESS_BRILLIANT
+    steps: [fade_in(0.6), cam_spin(1.2), particles_petals, sfx_chime_bright, vignette_gold, text("orgel.success.brilliant")]
+  - id: ORGEL_FAIL_CALM
+    steps: [desaturate(0.4), cam_pull(1.0), sfx_miss_soft, text("orgel.fail.calm")]
+  - id: ORGEL_FAIL_SILENT
+    steps: [fade_to_black(0.8), sfx_hush, text("orgel.fail.silent")]
+Bindings:
+  SOLMARA_01: {success: ORGEL_SUCCESS_SOFT, fail: ORGEL_FAIL_CALM}
+  SOLMARA_02: {success: ORGEL_SUCCESS_BRILLIANT, fail: ORGEL_FAIL_SILENT}

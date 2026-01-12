@@ -1,0 +1,15 @@
+Items:
+  ING_IronIngot: {type: material, rarity: Common, desc: "정제된 철 주괴"}
+  UPG_BladeEdgeI: {type: upgrade, rarity: Uncommon, desc: "+공격 효율 소폭 증가"}
+  ACC_SimpleMask: {type: trinket, rarity: Common, desc: "얼굴을 가리는 간단한 가면"}
+  MAP_ShortcutPass: {type: key, rarity: Uncommon, desc: "성 내부 지름길 통행증"}
+  DOC_FieldNotes: {type: doc, rarity: Common, desc: "야외 조사 기록"}
+  ACC_RoseCameo: {type: trinket, rarity: Rare, desc: "장미 카메오 브로치"}
+  SOL_BR_AppleWine: {type: drink, rarity: Common, desc: "사과 와인"}
+  INSTR_Lute: {type: instrument, rarity: Uncommon, desc: "잘 조율된 류트"}
+  BAR_MAT_MoonsaltOre: {type: material, rarity: Uncommon, desc: "월광 소금 원석"}
+  BAR_MAT_LilacResin: {type: material, rarity: Uncommon, desc: "야상 라일락 수지"}
+  BAR_MAT_ChimeBone: {type: material, rarity: Rare, desc: "맑은 소리의 뼈"}
+  BAR_ART_MoonSalt: {type: ritual, rarity: Rare, desc: "달빛의 소금 (의식 안정)"}
+  BAR_ART_RuneInk: {type: ritual, rarity: Rare, desc: "문장 잉크 (페이즈 스킵)"}
+  ACC_BoneChime: {type: trinket, rarity: Epic, desc: "에코 저항 +15%"}

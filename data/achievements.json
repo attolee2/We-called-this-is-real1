@@ -1,0 +1,8 @@
+{
+  "achievements": [
+    {"id": "ACH_ORGEL_SOL1", "name": "첫 오르골", "steamStat": "orgel_sol1_clear"},
+    {"id": "ACH_DANCE_A", "name": "무도회 A", "steamStat": "ball_grade_A"},
+    {"id": "ACH_WISP_CLEAR", "name": "합창의 침묵", "steamStat": "baretos_wisp_clear"},
+    {"id": "ACH_TOURN_WIN", "name": "왕국의 수호자", "steamStat": "tournament_triple_A"}
+  ]
+}

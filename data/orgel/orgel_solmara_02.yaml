@@ -1,0 +1,46 @@
+# Town & Hearth Orgel sequence for Solmara
+OrgelSequence:
+  id: ORGEL_SOLMARA_02
+  order_hint: [T01_Welcome, T02_Hearth, T03_Market, T04_Rain, T05_Lanterns, T06_Sleep]
+  tiles:
+    - id: T01_Welcome
+      oneShot: SFX/orgel/town01.wav
+      stem: BGM/orgel/stemA_pad.wav
+      locTitle: town.orgel.welcome.title
+      locText: town.orgel.welcome.text
+      harmonyBias: 0.05
+    - id: T02_Hearth
+      oneShot: SFX/orgel/town02.wav
+      stem: BGM/orgel/stemB_harmony.wav
+      locTitle: town.orgel.hearth.title
+      locText: town.orgel.hearth.text
+      harmonyBias: 0.1
+    - id: T03_Market
+      oneShot: SFX/orgel/town03.wav
+      stem: BGM/orgel/stemC_rhythm.wav
+      locTitle: town.orgel.market.title
+      locText: town.orgel.market.text
+      harmonyBias: 0.12
+    - id: T04_Rain
+      oneShot: SFX/orgel/town04.wav
+      stem: BGM/orgel/stemA_pad.wav
+      locTitle: town.orgel.rain.title
+      locText: town.orgel.rain.text
+      harmonyBias: 0.0
+    - id: T05_Lanterns
+      oneShot: SFX/orgel/town05.wav
+      stem: BGM/orgel/stemD_melody.wav
+      locTitle: town.orgel.lanterns.title
+      locText: town.orgel.lanterns.text
+      harmonyBias: 0.2
+    - id: T06_Sleep
+      oneShot: SFX/orgel/town06.wav
+      stem: BGM/orgel/stemA_pad.wav
+      locTitle: town.orgel.sleep.title
+      locText: town.orgel.sleep.text
+      harmonyBias: 0.25
+  rules:
+    tolerance: 1
+    success:
+      ui_hint: orgel.hint.correct
+      rewardFlags: [FLAG_ORGEL_SOLMARA_TOWN]

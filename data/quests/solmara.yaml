@@ -1,0 +1,70 @@
+# Solmara quests (main + side)
+Quest:
+  - id: Q_SOL_MAIN_ORGEL
+    titleKey: quest.main.title
+    steps:
+      - id: S1_JOURNAL
+        cond: {scene: Rodendell_Inn, action: OpenJournal}
+        do: {flag: JOURNAL_AWARE, log: quest.main.step1}
+      - id: S2_PORTAL
+        cond: {scene: Garden, interact: OrgelPortal}
+        do: {log: quest.main.step2}
+      - id: S3_ORGEL_CLEAR
+        cond: {orgel: ORGEL_SOLMARA_01, result: Harmony}
+        do: {log: quest.main.step3, reward: [FLAG_ORGEL_SOLMARA_CLEAR, HINT_BaretosTruth01]}
+      - id: S4_OBSERVER
+        cond: {timer: "10s", state: "PlayerNaturalDeath | CampfireSleep"}
+        do: {observer: OBS_SOL_TIME_ECHO, log: quest.main.step4}
+    rewards: [ACC_MaskSilk]
+
+  - id: Q_SOL_TOURNAMENT
+    titleKey: quest.tournament.title
+    steps:
+      - id: S1_CHEER
+        cond: {festival: SOL_FE_Tournament, minigame: cheer_timing, grade: B}
+        do: {rel: {npc: SOL_NPC_SEIRA, v: +2}, log: quest.tournament.step1}
+      - id: S2_SPARRING
+        cond: {npcEvent: EVT_SEIRA_SPARRING}
+        do: {rel: {npc: SOL_NPC_SEIRA, v: +5}, flag: SEIRA_SPARRING_DONE, log: quest.tournament.step2}
+      - id: S3_FINAL
+        cond: {festival: SOL_FE_Tournament, final: true}
+        do: {reward: [MED_TokenValor], log: quest.tournament.step3}
+
+  - id: Q_SOL_MAIRA
+    titleKey: quest.maira.title
+    steps:
+      - id: S1_FIRE_TALK
+        cond: {npc: SOL_NPC_MAIRA, verb: Listen, place: Fireplace}
+        do: {rel: {npc: SOL_NPC_MAIRA, v: +3}, log: quest.maira.step1}
+      - id: S2_ROSE_TEA
+        cond: {item: SOL_BR_RoyalRoseTea, verb: ShareDrink}
+        do: {rel: {npc: SOL_NPC_MAIRA, v: +3}, log: quest.maira.step2}
+      - id: S3_LETTER
+        cond: {verb: Letter, npc: SOL_NPC_MAIRA, rank: Affection}
+        do: {hint: HINT_TRUEENDING_02, rel: {npc: SOL_NPC_MAIRA, v: +5}, log: quest.maira.step3}
+
+  - id: Q_SOL_CLAUDE
+    titleKey: quest.claude.title
+    steps:
+      - id: S1_MICROSHOW
+        cond: {npcEvent: EVT_CLAUDE_MICROSHOW}
+        do: {rel: {npc: SOL_NPC_CLAUDE, v: +4}, log: quest.claude.step1}
+      - id: S2_RHYTHM
+        cond: {verb: PerformMusic, place: Plaza, score: A}
+        do: {rel: {npc: SOL_NPC_CLAUDE, v: +3}, log: quest.claude.step2}
+      - id: S3_MASK_SECRET
+        cond: {npcEvent: EVT_CLAUDE_DISGUISE}
+        do: {reward: [ACC_MaskSilk], log: quest.claude.step3}
+
+  - id: Q_SOL_ALCHEMY
+    titleKey: quest.alchem.title
+    steps:
+      - id: S1_GATHER
+        cond: {items: [IN_FireflyEssence, SOL_FL_KingsThyme]}
+        do: {log: quest.alchem.step1}
+      - id: S2_LEARN
+        cond: {npc: SOL_NPC_BERTA, verb: Teach, topic: Alchemy}
+        do: {log: quest.alchem.step2}
+      - id: S3_MIRROR
+        cond: {craft: ARK_ART_EmotionMirror}
+        do: {unlock: HUD_Emotion, log: quest.alchem.step3}

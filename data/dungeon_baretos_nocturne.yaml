@@ -1,0 +1,38 @@
+# Baretos teaser dungeon specification
+Dungeon:
+  id: BAR_DGN_NOCTURNE
+  entry:
+    time: Night
+    weather: Clear
+    rule: "SPIRITSIGHT or FEST_DayOfDeparted"
+  rooms:
+    - id: R1_WhisperGate
+      puzzle:
+        type: SigilOrder
+        hint: hint.baretos.truth1
+      fail:
+        hex: SAD_ECHO
+        note: "Listen 성공 시 제거"
+    - id: R2_SaltCircle
+      mechanic:
+        type: CircleMaintain
+        input: Hold
+        duration: 20
+      assist:
+        item: BAR_ART_MoonSalt
+        effect: "-20% difficulty"
+    - id: R3_MirrorChamber
+      encounter:
+        boss: WispChoir
+        pattern: CallAndResponse
+      assist:
+        item: BAR_ART_RuneInk
+        effect: "phase skip once"
+  rewards:
+    - id: RECIPE_RuneInk
+      type: Recipe
+    - id: BAR_ART_BoneCharm
+      type: Artifact
+  observer:
+    packet: OBS_BAR_CATACOMB_INTRO
+  lore: "바레토스는 ‘신의 저주’로 밤이 늘어졌다. 금지된 마법은 파괴가 아니라 복원의 문법이었다."

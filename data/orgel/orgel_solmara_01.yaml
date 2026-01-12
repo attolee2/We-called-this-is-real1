@@ -1,0 +1,78 @@
+OrgelSequence:
+  id: ORGEL_SOLMARA_01
+  order_hint:
+    - E01_Lonely
+    - E02_Longing
+    - E03_Hope
+    - E04_Love
+    - E05_Fear
+    - E06_Anger
+    - E07_Forgiveness
+    - E08_Calm
+    - E09_Observer
+  tiles:
+    - id: E01_Lonely
+      oneShot: "SFX/orgel/tile01.wav"
+      stem: "BGM/orgel/stemA_pad.wav"
+      locTitle: "orgel.tile01.title"
+      locText: "orgel.tile01.text"
+      harmonyBias: 0.0
+    - id: E02_Longing
+      oneShot: "SFX/orgel/tile02.wav"
+      stem: "BGM/orgel/stemB_harmony.wav"
+      locTitle: "orgel.tile02.title"
+      locText: "orgel.tile02.text"
+      harmonyBias: 0.05
+    - id: E03_Hope
+      oneShot: "SFX/orgel/tile03.wav"
+      stem: "BGM/orgel/stemC_rhythm.wav"
+      locTitle: "orgel.tile03.title"
+      locText: "orgel.tile03.text"
+      harmonyBias: 0.1
+    - id: E04_Love
+      oneShot: "SFX/orgel/tile04.wav"
+      stem: "BGM/orgel/stemD_melody.wav"
+      locTitle: "orgel.tile04.title"
+      locText: "orgel.tile04.text"
+      harmonyBias: 0.15
+    - id: E05_Fear
+      oneShot: "SFX/orgel/tile05.wav"
+      stem: "BGM/orgel/stemA_pad.wav"
+      locTitle: "orgel.tile05.title"
+      locText: "orgel.tile05.text"
+      harmonyBias: -0.05
+    - id: E06_Anger
+      oneShot: "SFX/orgel/tile06.wav"
+      stem: "BGM/orgel/stemC_rhythm.wav"
+      locTitle: "orgel.tile06.title"
+      locText: "orgel.tile06.text"
+      harmonyBias: -0.1
+    - id: E07_Forgiveness
+      oneShot: "SFX/orgel/tile07.wav"
+      stem: "BGM/orgel/stemB_harmony.wav"
+      locTitle: "orgel.tile07.title"
+      locText: "orgel.tile07.text"
+      harmonyBias: 0.2
+    - id: E08_Calm
+      oneShot: "SFX/orgel/tile08.wav"
+      stem: "BGM/orgel/stemA_pad.wav"
+      locTitle: "orgel.tile08.title"
+      locText: "orgel.tile08.text"
+      harmonyBias: 0.25
+    - id: E09_Observer
+      oneShot: "SFX/orgel/tile09.wav"
+      stem: "BGM/orgel/stemD_melody.wav"
+      locTitle: "orgel.tile09.title"
+      locText: "orgel.tile09.text"
+      harmonyBias: 0.4
+  rules:
+    tolerance: 1
+    dissonance:
+      detune_semitone: -1
+      chroma_shift: 0.03
+      ui_hint: "orgel.hint.wrong"
+    success:
+      ui_hint: "orgel.hint.correct"
+      rewardFlags:
+        - FLAG_ORGEL_SOLMARA_CLEAR
+      grantMemory: "mem.sol.gate.shadow"

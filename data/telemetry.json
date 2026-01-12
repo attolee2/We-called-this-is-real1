@@ -1,0 +1,7 @@
+{
+  "events": [
+    {"id": "E_ORGEL_SOL1_CLEAR", "when": "orgelClear", "params": ["sequenceId", "attempts"]},
+    {"id": "E_NPC_REL_UP", "when": "relChange", "params": ["npcId", "delta", "verb"]},
+    {"id": "E_DUNGEON_BAR_ENTER", "when": "enter", "params": ["dungeonId"]}
+  ]
+}
